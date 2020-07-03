@@ -1,0 +1,22 @@
+{
+	//0-可视化   1-直接出结论
+	"Type" : 0,
+	"sideLen" : 30,
+    "VehicleCapacityDefault" : 10,
+    // 单独设置
+    "VehicleCapacities" : [{"id" : 1, "cap" : 8}, 
+  							{"id" : 5, "cap" : 8}],
+    "RackCapacity" : 5,
+    "PortCapacity" : 3,
+    // 最简化比例，输入格式为字符串，数字之间只用一个逗号隔开(不用加空格)
+    "Posibilities" : "0.1,0.2,0.2,0.1,0.2,0.1",
+    //"Posibilities" : "0.1,0.2,0.2,0.1,0.2,0.1,0.1,0.2,0.2,0.1,0.2,0.1,0.1,0.2,0.2,0.1,0.2,0.1",
+    //"Posibilities" : "0.1,0.2,0.2,0.1,0.2,0.1,0.1,0.2,0.2,0.1,0.2,0.1,0.1,0.2,0.2,0.1,0.2,0.1,0.1,0.2,0.2,0.1,0.2,0.2,0.1,0.2,0.1,",
+    // 一个单子最多货物个数，应小于货车容量
+    "MaxGoodCount" : 5,
+    // VehicleSpeed = UpdateActionTime
+    "createOrderTime": 3000,
+    "LoadAndUnloadSpeed" : 3,
+    // 格式示例 E:\\try.csv    修改时记得修改下面对应行数和列数
+    "CsvPath" : "source/map.csv",
+}
